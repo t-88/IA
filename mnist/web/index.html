@@ -2,11 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Simple But Decenet MNIST Model</h1>
+    <h2 id="res">IA Says: </h2>
+    <div id="canvas-container">
+        <canvas id="canvas" width="56" height="56"></canvas>
+    </div>
+    <div id="btns">
+        <button onclick="predict()">Predict</button>
+        <button onclick="clear_canvas()">Clear</button>
+    </div>
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.6"></script>
+<script src="tfjs.js"></script>
+    <script src="host.js"></script>
     <script src="main.js"></script>
 </html>
